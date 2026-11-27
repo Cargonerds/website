@@ -30,7 +30,7 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { -webkit-text-size-adjust: 100%; }
+html { -webkit-text-size-adjust: 100%; scrollbar-gutter: stable; } /* reserve scrollbar space so the logo never shifts between short and long pages */
 body { background: var(--background); color: var(--foreground); font-family: var(--font); line-height: 1.5; }
 body.home { font-family: "MikroSuper", sans-serif; letter-spacing: 0.07em; }
 body.home .hero h1 { letter-spacing: 0.03em; }
@@ -48,7 +48,7 @@ main { display: flex; flex-direction: column; min-height: 100vh; padding: 2.5rem
 .contact { margin-top: 2.5rem; font-size: 1.25rem; line-height: 1.625; font-weight: 600; }
 
 /* imprint + privacy */
-main.page { padding-top: 3rem; padding-bottom: 3rem; }
+main.page { padding-bottom: 3rem; } /* same top padding as index so the logo stays put */
 .content { flex: 1; padding: 4rem 0; }
 .content > div { max-width: 48rem; }
 .content h1 { font-size: 2.25rem; line-height: 2.5rem; font-weight: 800; letter-spacing: -0.05em; }
